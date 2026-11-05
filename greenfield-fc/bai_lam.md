@@ -18,7 +18,7 @@ PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc\logs> cd ..
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc> Get-ChildItem -Force -Recurse
 ```
 Kết quả liệt kê toàn bộ dự án (bao gồm file ẩn):
-
+```
  Directory: C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc
 
 
@@ -88,27 +88,30 @@ Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a----         11/5/2026   1:18 PM           2115 greenfield-logo.png
 -a----         11/5/2026   1:18 PM            413 greenfield-logo.svg
+```
 ## 4.3 Lọc log
 **a) Lệnh lọc status=500:**
+```PowerShell
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc> Get-Content .\logs\access.log | Select-String "status=500" > .\logs\loi_500.txt
-
+```
 Hai dòng đầu của loi_500.txt:
-
+```
 2026-10-28 18:03:25 GET /api/players status=500
 2026-10-28 18:05:12 GET /api/players status=500
-
+```
 **b) Lệnh đếm status=404 và kết quả:**
+```
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc> (Get-Content .\logs\access.log | Select-String "status=404").Count
 
 4
-
+```
 ## 4.4 Script báo cáo
 Lệnh chạy script:
-
+```
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc> .\tong_hop.ps1
-
+```
 Nội dung logs/tong_hop.txt:
-
+```
 === BAO CAO GREENFIELD FC ===
 
 2026-10-28 18:03:22 GET /images/logo-sai.png status=404
@@ -118,7 +121,7 @@ Nội dung logs/tong_hop.txt:
 
 
 3
-
+```
 
 ## 4.6 Kiểm tra website và báo cáo lỗi
 | Tab | Tên file/thông báo | Cách khắc phục |
