@@ -5,7 +5,7 @@ Lớp: CNTT3
 
 ## 4.2 Thao tác CLI
 Lệnh đã chạy: 
-
+```Powershell
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc> pwd
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc> ls -Force
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc> mv .\ghi-chu-ban-giao.txt ".\docs"
@@ -16,7 +16,7 @@ PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc> cd .\logs
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc\logs> Get-Content .\access.log
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc\logs> cd ..
 PS C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc> Get-ChildItem -Force -Recurse
-
+```
 Kết quả liệt kê toàn bộ dự án (bao gồm file ẩn):
 
  Directory: C:\Starter_Kit_GreenField_FC\starter-kit\greenfield-fc
